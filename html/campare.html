@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OceanGate Navbar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/compare.css">
+</head>
+
+<body>
+
+
+    <header>
+
+        <div class="navbar-container">
+
+            <div class="logo-area">
+                <span class="logo-text">Ocean<span class="blue-text">Gate</span></span>
+            </div>
+
+            <nav class="nav-links">
+                <a href="./index.html" class="nav-item ">Home</a>
+                <a href="./products.html" class="nav-item ">Products</a>
+                <a href="./campare.html" class="nav-item active">Compare</a>
+                <a href="./support.html" class="nav-item">Support</a>
+                <a href="./WTB.html" class="nav-item ">Where to Buy</a>
+                <a href="./about.html" class="nav-item">About Us</a>
+            </nav>
+
+            <div class="cta-area">
+                <a href="./contact.html"><button class="btn-contact">Contact Us</button></a>
+            </div>
+
+        </div>
+    </header>
+
+    <div class="compare-container">
+        <span class="sub-title">SIDE BY SIDE</span>
+        <h1 class="main-title">Compare Products</h1>
+        <p class="description">
+            Select products from the list below to compare their specifications side by side. You can also add products
+            from the Products page.
+        </p>
+
+        <div class="quick-add-panel">
+            <h3>QUICK ADD PRODUCTS TO COMPARE (SELECT UP TO 4)</h3>
+            <div class="pills-container" id="pillsContainer">
+            </div>
+        </div>
+
+        <div class="selected-badges-row" id="selectedBadgesRow">
+        </div>
+
+        <div class="action-row">
+            <button class="btn-compare-now" id="compareNowBtn" onclick="triggerComparison()">Compare Now</button>
+        </div>
+
+        <div class="table-section" id="tableSection" style="display: none;">
+            <div class="table-responsive">
+                <table class="spec-table">
+                    <thead>
+                        <tr id="tableHeaderRow">
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="rowPrice"></tr>
+                        <tr id="rowCategory"></tr>
+                        <tr id="rowType"></tr>
+                        <tr id="rowSpeed"></tr>
+                        <tr id="rowColor"></tr>
+                        <tr id="rowWarranty"></tr>
+                        <tr id="rowFeatures"></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-container">
+
+        <div class="footer-top">
+
+            <div class="footer-brand-col">
+                <div class="logo-area">
+                    <div class="icon-box">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2">
+                            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                            <path d="M12 14h.01"></path>
+                            <path d="M12 18h.01"></path>
+                        </svg>
+                    </div>
+                    <span class="logo-text">Ocean<span class="blue-text">Gate</span></span>
+                </div>
+                <p class="brand-desc">
+                    Premium data storage solutions from floppy disks to next-gen SSDs. Trusted by 50,000+ customers
+                    worldwide.
+                </p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links-col">
+                <h3>PRODUCTS</h3>
+                <ul>
+                    <li><a href="#">CD-ROM Drives</a></li>
+                    <li><a href="#">Compact Discs</a></li>
+                    <li><a href="#">DVD Products</a></li>
+                    <li><a href="#">USB Flash Drives</a></li>
+                    <li><a href="#">External HDD</a></li>
+                    <li><a href="#">SSD Storage</a></li>
+                    <li><a href="#">Blu-ray</a></li>
+                    <li><a href="#">Memory Cards</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-col">
+                <h3>COMPANY</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Support Center</a></li>
+                    <li><a href="#">Where to Buy</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Compare Products</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press & Media</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-col">
+                <h3>SUPPORT</h3>
+                <ul>
+                    <li><a href="#">Email Support</a></li>
+                    <li><a href="#">Warranty Policy</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Shipping Info</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p class="copyright">© 2024 OceanGate Limited. All rights reserved.</p>
+            <div class="legal-links">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Sitemap</a>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="./compare.js"></script>
+
+</body>
+
+</html>

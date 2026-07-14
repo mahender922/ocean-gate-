@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OceanGate Navbar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/productsdemo.css">
+</head>
+
+<body>
+
+    
+    <header>
+
+        <div class="navbar-container">
+
+            <div class="logo-area">
+                <span class="logo-text">Ocean<span class="blue-text">Gate</span></span>
+            </div>
+
+            <nav class="nav-links">
+                <a href="./index.html" class="nav-item ">Home</a>
+                <a href="./products.html" class="nav-item active">Products</a>
+                <a href="./campare.html" class="nav-item">Compare</a>
+                <a href="./support.html" class="nav-item">Support</a>
+                <a href="./WTB.html" class="nav-item ">Where to Buy</a>
+                <a href="./about.html" class="nav-item">About Us</a>
+            </nav>
+
+            <div class="cta-area">
+                <a href="./contact.html"><button class="btn-contact">Contact Us</button></a>
+            </div>
+
+        </div>
+    </header>
+
+    <section class="main-container">
+        <div class="main">
+            <h3 class="catalog">OUR CATALOG</h3>
+            <h1 class="allproduct">All Products</h1>
+            <p class="sub-heading">
+                Browse our complete range of data storage products. Filter by category or brand to find exactly
+                what you need.
+            </p>
+
+
+        </div>
+        <p class="filterbycategory">FILTER BY CATEGORY</p>
+        <div class="catbtn">
+            <button class="brand-btn active-brand active" onclick="filterCategory('all')">All Categories</button>
+            <button class="brand-btn active-brand" onclick="filterCategory('cdrom')">CD-ROM Drives</button>
+            <button class="brand-btn active-brand" onclick="filterCategory('compact-disc')">Compact Discs</button>
+            <button class="brand-btn active-brand" onclick="filterCategory('dvd')">DVD Products</button>
+            <button class="brand-btn active-brand" onclick="filterCategory('usb')">USB Flash Drives</button>
+            <button class="brand-btn active-brand" onclick="filterCategory('external-hdd')">External HDD</button>
+            <button class="brand-btn active-brand" onclick="filterCategory('ssd')">SSD Storage</button>
+            <button class="brand-btn active-brand" onclick="filterCategory('blu-ray')">Blu-ray</button>
+            <button class="brand-btn active-brand" onclick="filterCategory('memory-card')">Memory Cards</button>
+        </div>
+
+        <!-- FILTER BY BRAND -->
+        <p class="filterbybrand">FILTER BY Brand</p>
+        <div class="catbtn">
+            <button class="brand-btn active-brand" onclick="filterBrand('all')">All Brands</button>
+            <button class="brand-btn active-brand" onclick="filterBrand('Samsung')">Samsung</button>
+            <button class="brand-btn active-brand" onclick="filterBrand('Sony')">Sony</button>
+            <button class="brand-btn active-brand" onclick="filterBrand('Seagate')">Seagate</button>
+            <button class="brand-btn active-brand" onclick="filterBrand('Kingston')">Kingston</button>
+            <button class="brand-btn active-brand" onclick="filterBrand('LG')">LG</button>
+            <button class="brand-btn active-brand" onclick="filterBrand('Asus')">Asus</button>
+        </div>
+
+        <div class="results-info-bar">
+            <p id="resultCount">Showing 24 products</p>
+            <p>Select products to compare</p>
+        </div>
+
+
+        <div class="products-grid" id="productsGrid">
+        </div>
+    </section>
+
+    <footer class="footer-container">
+
+        <div class="footer-top">
+
+            <div class="footer-brand-col">
+                <div class="logo-area">
+                    <div class="icon-box">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2">
+                            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                            <path d="M12 14h.01"></path>
+                            <path d="M12 18h.01"></path>
+                        </svg>
+                    </div>
+                    <span class="logo-text">Ocean<span class="blue-text">Gate</span></span>
+                </div>
+                <p class="brand-desc">
+                    Premium data storage solutions from floppy disks to next-gen SSDs. Trusted by 50,000+ customers
+                    worldwide.
+                </p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links-col">
+                <h3>PRODUCTS</h3>
+                <ul>
+                    <li><a href="#">CD-ROM Drives</a></li>
+                    <li><a href="#">Compact Discs</a></li>
+                    <li><a href="#">DVD Products</a></li>
+                    <li><a href="#">USB Flash Drives</a></li>
+                    <li><a href="#">External HDD</a></li>
+                    <li><a href="#">SSD Storage</a></li>
+                    <li><a href="#">Blu-ray</a></li>
+                    <li><a href="#">Memory Cards</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-col">
+                <h3>COMPANY</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Support Center</a></li>
+                    <li><a href="#">Where to Buy</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Compare Products</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press & Media</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-col">
+                <h3>SUPPORT</h3>
+                <ul>
+                    <li><a href="#">Email Support</a></li>
+                    <li><a href="#">Warranty Policy</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Shipping Info</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p class="copyright">© 2024 OceanGate Limited. All rights reserved.</p>
+            <div class="legal-links">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Sitemap</a>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="./main.js"></script>
+
+</body>
+
+</html>
